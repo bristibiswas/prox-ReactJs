@@ -1,0 +1,142 @@
+/* Banner Section */
+.service-banner {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(0deg, var(--theme-light), var(--theme-dark));
+}
+.service-banner .container h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+}
+.service-banner .container p {
+  font-size: 1.8rem;
+  padding: 0 5rem;
+  margin-top: 2rem;
+  color: var(--light-text-color);
+}
+.service-banner svg {
+  position: absolute;
+  font-size: 4rem;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  animation: animateSvg 0.7s infinite linear alternate;
+}
+@keyframes animateSvg {
+  to {
+    transform: translate(-50%, -15px);
+  }
+}
+
+/* Service Animation */
+.mobile {
+  margin: 4rem 0;
+}
+.mobile h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  padding: 0 4rem;
+}
+.mobile h2 span {
+  color: var(--theme-light);
+}
+.mobile .row-section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+.mobile .row-section .mobile-content {
+  padding: 0 4rem;
+}
+.mobile .row-section .col-section {
+  width: 50%;
+}
+.mobile .row-section .col-section h4 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.mobile .reverse .col-section h4 {
+  font-size: 2.25rem;
+}
+.mobile .row-section .col-section p {
+  font-size: 1.5rem;
+}
+.mobile .row-section .col-section img {
+  width: 100%;
+  border-radius: 100px 0 0 100px;
+}
+.mobile .reverse .col-section img {
+  width: 100%;
+  border-radius: 0 100px 100px 0;
+}
+
+/* Service Graphics */
+.graphics {
+  padding: 2rem 8rem;
+}
+.graphics img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+.service-bottom {
+  display: grid;
+  grid: auto / 1fr 1fr;
+  padding: 2rem;
+  background-color: var(--bg-light);
+}
+.service-bottom .service-col {
+  padding: 0 6rem;
+}
+.service-bottom .service-col h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 2rem;
+  color: var(--gray-heading);
+}
+.service-bottom .service-col p {
+  font-size: 1.5rem;
+  color: var(--gray-text);
+}
+
+/* Reasons */
+.reasons {
+  background: linear-gradient(0deg, var(--theme-light), var(--theme-dark));
+  padding: 2rem;
+  margin-top: 2rem;
+}
+.reasons .row .left {
+  text-align: center;
+}
+.reasons .row h2 {
+  color: var(--light-text-color);
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+.reasons .row .left img {
+  width: 100%;
+  object-fit: cover;
+}
+.reasons .row .right .text {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.reasons .row .right h4 {
+  color: var(--light-text-color);
+  text-transform: uppercase;
+}
+.reasons .row .right p {
+  color: var(--light-text-color);
+  font-size: 1.1rem;
+}
